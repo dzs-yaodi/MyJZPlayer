@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/jz_bottom_bg"
+        android:background="@drawable/xm_live_jz_bottom_bg"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:visibility="invisible">
@@ -54,8 +54,8 @@
             android:paddingTop="8dp"
             android:paddingRight="12dp"
             android:paddingBottom="8dp"
-            android:progressDrawable="@drawable/jz_bottom_seek_progress"
-            android:thumb="@drawable/jz_bottom_seek_thumb" />
+            android:progressDrawable="@drawable/xm_live_jz_bottom_seek_progress"
+            android:thumb="@drawable/xm_live_jz_bottom_seek_thumb" />
 
         <TextView
             android:id="@+id/total"
@@ -81,7 +81,7 @@
             android:paddingLeft="14dp"
             android:paddingRight="14dp"
             android:scaleType="centerInside"
-            android:src="@drawable/jz_enlarge" />
+            android:src="@drawable/xm_live_jz_enlarge" />
     </LinearLayout>
 
     <ProgressBar
@@ -91,7 +91,7 @@
         android:layout_height="1.5dp"
         android:layout_alignParentBottom="true"
         android:max="100"
-        android:progressDrawable="@drawable/jz_bottom_progress" />
+        android:progressDrawable="@drawable/xm_live_jz_bottom_progress" />
 
     <ImageView
         android:id="@+id/back_tiny"
@@ -99,7 +99,7 @@
         android:layout_height="24dp"
         android:layout_marginLeft="6dp"
         android:layout_marginTop="6dp"
-        android:background="@drawable/jz_click_back_tiny_selector"
+        android:background="@drawable/xm_live_jz_click_back_tiny_selector"
         android:visibility="gone" />
 
     <RelativeLayout
@@ -109,7 +109,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/jz_title_bg"
+        android:background="@drawable/xm_live_jz_title_bg"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:visibility="gone">
@@ -124,7 +124,7 @@
             android:layout_marginTop="12dp"
             android:padding="3dp"
             android:scaleType="centerInside"
-            android:src="@drawable/jz_click_back_selector" />
+            android:src="@drawable/xm_live_jz_click_back_selector" />
 
         <TextView
             android:id="@+id/title"
@@ -159,7 +159,7 @@
                 android:layout_width="23dp"
                 android:layout_height="10dp"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/jz_battery_level_10" />
+                android:background="@drawable/xm_live_jz_battery_level_10" />
 
             <TextView
                 android:id="@+id/video_current_time"
@@ -175,11 +175,11 @@
 
     <ProgressBar
         android:id="@+id/loading"
-        android:layout_width="@dimen/jz_start_button_w_h_normal"
-        android:layout_height="@dimen/jz_start_button_w_h_normal"
+        android:layout_width="@dimen/xm_live_jz_start_button_w_h_normal"
+        android:layout_height="@dimen/xm_live_jz_start_button_w_h_normal"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:indeterminateDrawable="@drawable/jz_loading"
+        android:indeterminateDrawable="@drawable/xm_live_jz_loading"
         android:visibility="invisible" />
 
     <LinearLayout
@@ -192,9 +192,9 @@
 
         <ImageView
             android:id="@+id/start"
-            android:layout_width="@dimen/jz_start_button_w_h_normal"
-            android:layout_height="@dimen/jz_start_button_w_h_normal"
-            android:src="@drawable/jz_click_play_selector" />
+            android:layout_width="@dimen/xm_live_jz_start_button_w_h_normal"
+            android:layout_height="@dimen/xm_live_jz_start_button_w_h_normal"
+            android:src="@drawable/xm_live_jz_click_play_selector" />
     </LinearLayout>
 
 
@@ -205,7 +205,7 @@
         android:layout_below="@+id/start_layout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="6dp"
-        android:text="@string/replay"
+        android:text="@string/xm_live_replay"
         android:textColor="#ffffff"
         android:textSize="12sp"
         android:visibility="invisible" />
@@ -223,7 +223,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/video_loading_failed"
+            android:text="@string/xm_live_video_loading_failed"
             android:textColor="@android:color/white"
             android:textSize="14sp" />
 
@@ -232,12 +232,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:background="@drawable/retry_bg"
+            android:background="@drawable/xm_live_retry_bg"
             android:paddingLeft="9dp"
             android:paddingTop="4dp"
             android:paddingRight="9dp"
             android:paddingBottom="4dp"
-            android:text="@string/click_to_restart"
+            android:text="@string/xm_live_click_to_restart"
             android:textColor="@android:color/white"
             android:textSize="14sp" />
     </LinearLayout>

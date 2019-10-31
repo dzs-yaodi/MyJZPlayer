@@ -177,7 +177,7 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
         if (i == R.id.start) {
             Log.i(TAG, "onClick start [" + this.hashCode() + "] ");
             if (jzDataSource == null || jzDataSource.urlsMap.isEmpty() || jzDataSource.getCurrentUrl() == null) {
-                Toast.makeText(getContext(), getResources().getString(R.string.no_url), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), getResources().getString(R.string.xm_live_no_url), Toast.LENGTH_SHORT).show();
                 return;
             }
             if (state == STATE_NORMAL) {
@@ -872,10 +872,12 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
             if (state == STATE_PLAYING || state == STATE_PAUSE) {
 //                Log.v(TAG, "onProgressUpdate " + "[" + this.hashCode() + "] ");
                 post(() -> {
-                    long position = getCurrentPositionWhenPlaying();
-                    long duration = getDuration();
-                    int progress = (int) (position * 100 / (duration == 0 ? 1 : duration));
-                    onProgress(progress, position, duration);
+                    if (mediaInterface != null) {
+                        long position = getCurrentPositionWhenPlaying();
+                        long duration = getDuration();
+                        int progress = (int) (position * 100 / (duration == 0 ? 1 : duration));
+                        onProgress(progress, position, duration);
+                    }
                 });
             }
         }
