@@ -541,7 +541,7 @@ public abstract class Jzvd extends FrameLayout implements View.OnClickListener, 
         this.seekToInAdvance = seekToInAdvance;
         jzDataSource.currentUrlIndex = urlMapIndex;
         mediaInterface.setSurface(null);
-//        mediaInterface.release();
+        mediaInterface.release();
         mediaInterface.prepare();
     }
 
